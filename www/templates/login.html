@@ -1,0 +1,30 @@
+<ion-view title="WorkOuts Login">
+    <ion-content class="gradient-pattern">
+
+
+        <section class="container ">
+            <div class="login">
+                <h1>Entrar a WorkOuts App</h1>
+
+                <form method="post" action="index.html">
+                    <p><input type="email" class="textbox" name="login" value="" placeholder="Email"
+                              ng-model="usuario.email" maxlength="30"></p>
+
+                    <p><input type="password" name="password" value="" placeholder="Password"
+                              ng-model="usuario.password" maxlength="20"></p>
+
+
+                    <p class="submit"><input type="button" value="Login" ng-click="iniciarSession()"></p>
+
+                    <p class="submit"><input type="button" value="Registrar nueva cuenta" ui-sref="noLogin.Registro">
+                    </p>
+                </form>
+            </div>
+
+            <div class="login-help">
+                <p>Olvidaste tu contraseña? <a href="index.html"> Pincha aquí para restaurarla</a>.</p>
+            </div>
+        </section>
+
+    </ion-content>
+</ion-view>

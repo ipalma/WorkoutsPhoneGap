@@ -1,0 +1,52 @@
+
+<ion-view title="Registro de Usuario">
+    <ion-content class="gradient-pattern">
+        <section class="container">
+            <div class="login">
+                <label class="item-input">
+                <input type="email" placeholder="Email" ng-model="usuario.email">
+            </label>
+                <label class=" item-input">
+                <input type="password" placeholder="Password" ng-model="usuario.password">
+            </label>
+                <label class=" item-input">
+                <input type="text" placeholder="Nombre" ng-model="usuario.nombre">
+            </label>
+                <label class="item-input">
+                <input type="number" placeholder="Edad" ng-model="usuario.edad">
+            </label>
+                <label class="item-input">
+                <input type="number" placeholder="Peso" ng-model="usuario.peso">
+            </label>
+
+                <label class="item-input">
+                <div class="switch switch-yellow">
+                    <input type="radio" class="switch-input" name="view3" ng-model="usuario.genero" value="M" id="week3"
+                           checked="checked">
+                    <label for="week3" class="switch-label switch-label-off">Hombre</label>
+                    <input type="radio" class="switch-input" name="view3" value="F" ng-model="usuario.genero"
+                           id="month3"
+                           ng-model="usuario.genero">
+                    <label for="month3" class="switch-label switch-label-on">Mujer</label>
+                    <span class="switch-selection"></span>
+                </div>
+
+            </label>
+                <label class="item-input">
+                <button class="btn" ng-click="seleccionarFoto()">Foto</button>
+                <img style="width: 25%;heigh:auto;" ng-src="{{usuario.foto}}">
+
+                <!--<input type="file" placeholder="Foto" ng-model="usuario.foto">-->
+
+            </label>
+                <label class="">
+                    <p class="submit">
+                        <button value="" ng-click="RegistrarUsuario()">Registrar Usuario</button>
+                    </p>
+
+            </label>
+            </div>
+        </section>
+        </div>
+    </ion-content>
+</ion-view>

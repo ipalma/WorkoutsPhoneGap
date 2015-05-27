@@ -1,0 +1,16 @@
+<ion-view title="Rutinas">
+
+     
+    <ion-content class="gradient-pattern">
+           
+        <section class="container ">
+    <ion-list>
+        <ion-item class="item-avatar" ng-repeat="item in rutinas"
+                  type="item-text-wrap" href="#/tab/rutinas/{{item.id}}">
+            <h2>{{item.nombre}}</h2>
+
+        </ion-item>
+    </ion-list>
+        </section>
+</ion-content>
+</ion-view>

@@ -1,0 +1,32 @@
+<ion-view title="Perfil">
+    <ion-content class="gradient-pattern">
+        <section class="container">
+            <div class="item-avatar item">
+
+                <label class=item-avatar">
+                    <h2>Nombre: {{usuario.nombre}}</h2>
+                </label>
+                <label class="item-avatar">
+                    <h2>Email: {{usuario.email}} </h2>
+                </label>
+                <label class="item-avatar">
+                    <h2>Edad: {{usuario.edad}} </h2>
+
+                </label>
+                <label class="item-avatar">
+                    <h2>Peso: {{usuario.peso}} </h2>
+
+                </label>
+                <label class="item-avatar">
+                    <h2>Género: {{usuario.genero}} </h2>
+
+                </label>
+
+                <img style="width: 20%;height: auto;"
+                     ng-src="{{usuario.foto}}">
+
+            </div>
+        </section>
+        </div>
+    </ion-content>
+</ion-view>

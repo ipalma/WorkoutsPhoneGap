@@ -1,0 +1,22 @@
+<ion-view title="Ejercicios">
+
+     
+    <ion-content class="gradient-pattern">
+           
+        <ion-refresher
+                pulling-text="Pull to refresh..."
+                on-refresh="doRefresh()">
+        </ion-refresher>
+        <section class="container ">
+            <ion-list>
+                <ion-item class="item-avatar" ng-repeat="item in ejercicios"
+                          type="item-text-wrap">
+                    <h1>{{item.nombre}}</h1>
+
+                    <h2>{{item.descripcion}}</h2>
+                </ion-item>
+            </ion-list>
+        </section>
+    </ion-content>
+</ion-view>
+
